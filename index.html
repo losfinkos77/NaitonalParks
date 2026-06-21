@@ -227,7 +227,10 @@
       }
     };
 
+    let currentLang = "en";
+
     function setLang(lang) {
+      currentLang = lang;
       document.documentElement.lang = lang;
 
       document.querySelectorAll(".lang-btn").forEach(btn => {
